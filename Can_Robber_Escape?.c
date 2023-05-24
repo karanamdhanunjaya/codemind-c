@@ -1,32 +1,33 @@
 #include<stdio.h>
+
 int main()
 {
     int n;
     scanf("%d",&n);
-    int a[n];
+    int x[n];
     for(int i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&x[i]);
     }
-    int l=0;
+    int k=0;
     for(int i=0;i<n;i++)
     {
-        if(a[i]<n)
+        if(x[i]<n)
         {
-            l=1;
+            k=1;
         }
         else
         {
-            l=0;
+            k=0;
             break;
         }
     }
-    if(l==1)
+    if(k==0)
     {
-        printf("YES");
+        printf("NO");
     }
     else
     {
-        printf("NO");
+        printf("YES");
     }
 }
